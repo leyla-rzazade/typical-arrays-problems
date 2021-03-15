@@ -1,12 +1,13 @@
 
 exports.min = function min (array) {
-  return 0;
+  return Math.min(array);
 }
 
 exports.max = function max (array) {
-  return 0;
+  return Math.max(array);
 }
 
 exports.avg = function avg (array) {
-  return 0;
+  const arrAvg = array => array.reduce((a,b) => a + b, 0) / array.length
+  return arrAvg
 }
